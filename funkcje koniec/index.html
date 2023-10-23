@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcje - Math.</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-name">
+                <a href="#"><img src="./img/output-onlinepngtools.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#baner">baner</a></li>
+                    <li><a href="#functions-1">funkcje</a></li>
+                    <li><a href="#functions-2">funckje 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="baner">
+                <video muted autoplay loop>
+                    <source src="./img/cyberpunk-2077-gloomy-rainy-day-moewalls-com.mp4" type="video/mp4">
+                </video>
+                <div class="baner-title">
+                    <h1>Funkcje math</h1>
+                </div>
+            </section>
+            <section id="functions-1">
+                <div class="funct-1-place-content">
+                    <div class="funct-1-place">
+                        <div class="math-fnt math-1">
+                            <h1>Math.abs()</h1>
+                            <p>
+                                <b>Wartość bezwzględna </b><br>
+                                Metoda zwracająca wartość bezwzględną z podanej liczby. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math abs(a - b)</li>
+                                    </ul>
+                            </p>
+                            <label for="a1">a = </label>
+                            <input type="number" placeholder="0" id="a1">
+                            <label for="b1">b = </label>
+                            <input type="number" placeholder="0" id="b1">
+                            <button onclick="policz1()">Wynik</button>
+                            <p id="wynik1" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.max(x, y, ...)</h1>
+                            <p>
+                                Metoda statyczna Math.max() zwraca największą z liczb podanych jako parametry wejściowe lub -Infinity, jeśli nie ma żadnych parametrów. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.max(a, b, c)</li>
+                                    </ul>
+                            </p>
+                            <label for="a8">a = </label>
+                            <input type="number" placeholder="0" id="a8">
+                            <label for="b8">a = </label>
+                            <input type="number" placeholder="0" id="b8">
+                            <label for="c8">a = </label>
+                            <input type="number" placeholder="0" id="c8">
+                            <button onclick="policz8()">Wynik</button>
+                            <p id="wynik8" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.sqrt(x)</h1>
+                            <p>
+                                Metoda statyczna Math.sqrt() zwraca pierwiastek kwadratowy z liczby. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.sqrt(a)</li>
+                                    </ul>
+                            </p>
+                            <label for="a3">a = </label>
+                            <input type="number" placeholder="0" id="a3">
+                            <button onclick="policz3()">Wynik</button>
+                            <p id="wynik3" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.pow(x, y)</h1>
+                            <p>
+                                Metoda statyczna Math.pow() zwraca wartość bazy podniesionej do potęgi. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.pow(x, y)</li>
+                                    </ul>
+                            </p>
+                            <label for="x">x = </label>
+                            <input type="number" placeholder="0" id="x">
+                            <label for="y">y = </label>
+                            <input type="number" placeholder="0" id="y">
+                            <button onclick="policz9()">Wynik</button>
+                            <p id="wynik9" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Obliczanie Pola Koła(Math.PI)</h1>
+                            <p>
+                                Właściwość danych statycznych Math.PI reprezentuje stosunek obwodu okręgu do jego średnicy, w przybliżeniu 3,14159. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.PI * Math.pow(promien, 2)</li>
+                                    </ul>
+                            </p>
+                            <label for="r">r = </label>
+                            <input type="number" placeholder="0" id="r">
+                            <button onclick="policz4()">Wynik</button>
+                            <p id="wynik4" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.min(x, y, ...):</h1>
+                            <p>
+                                Metoda statyczna Math.min() zwraca najmniejszą z liczb podanych jako parametry wejściowe lub Infinity, jeśli nie ma żadnych parametrów. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.min(a, b, c)</li>
+                                    </ul>
+                            </p>
+                            <label for="a6">a = </label>
+                            <input type="number" placeholder="0" id="a6">
+                            <label for="b6">b = </label>
+                            <input type="number" placeholder="0" id="b6">
+                            <label for="c6">c = </label>
+                            <input type="number" placeholder="0" id="c6">
+                            <button onclick="policz6()">Wynik</button>
+                            <p id="wynik6" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.ceil</h1>
+                            <p>
+                                Metoda statyczna Math.ceil() zawsze zaokrągla w górę i zwraca najmniejszą liczbę całkowitą większą lub równą danej liczbie. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.ceil(a)</li>
+                                    </ul>
+                            </p>
+                            <label for="a5">a = </label>
+                            <input type="number" placeholder="0" id="a5">
+                            <button onclick="policz5()">Wynik</button>
+                            <p id="wynik5" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.round(x)</h1>
+                            <p>
+                                Metoda statyczna Math.round() zwraca wartość liczby zaokrąglonej do najbliższej liczby całkowitej. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.round(a)</li>
+                                    </ul>
+                            </p>
+                            <label for="a7">a = </label>
+                            <input type="number" placeholder="0" id="a7">
+                            <button onclick="policz7()">Wynik</button>
+                            <p id="wynik7" class="wnk"></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="paralax">
+            </section> <!--paralax-->
+            <section id="functions-2">
+                <div class="funct-2-place-content">
+                    <div class="funct-1-place">
+                        <div class="math-fnt math-1">
+                            <h1>Math.acos()</h1>
+                            <p>
+                                Metoda statyczna Math.acos() zwraca odwrotny cosinus (w radianach) liczby.
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.acos(adjacent / hypotenuse)</li>
+                                    </ul>
+                            </p>
+                            <label for="a2">a = </label>
+                            <input type="number" placeholder="0" id="a2">
+                            <button onclick="policz2()">Wynik</button>
+                            <p id="wynik2" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.floor </h1>
+                            <p>
+                                Metoda statyczna Math.floor() zawsze zaokrągla w dół i zwraca największą liczbę całkowitą mniejszą lub równą danej liczbie. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.pow(10, precision)</li>
+                                    </ul>
+                            </p>
+                            <label for="a10">a = </label>
+                            <input type="number" placeholder="0" id="a10">
+                            <button onclick="policz10()">Wynik</button>
+                            <p id="wynik10" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.trunc(x)</h1>
+                            <p>
+                                Metoda statyczna Math.trunc() zwraca część całkowitą liczby poprzez usunięcie cyfr ułamkowych. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.trunc(1)</li>
+                                    </ul>
+                            </p>
+                            <label for="a11">a = </label>
+                            <input type="number" placeholder="0" id="a11">
+                            <button onclick="policz11()">Wynik</button>
+                            <p id="wynik11" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.sign(x)</h1>
+                            <p>
+                                Metoda statyczna Math.sign() zwraca wartość 1 lub -1, wskazując znak liczby przekazanej jako argument. Jeśli dane wejściowe mają wartość 0 lub -0, zostaną zwrócone w takiej postaci, w jakiej są. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.sign(x)</li>
+                                    </ul>
+                            </p>
+                            <label for="x2">x = </label>
+                            <input type="number" placeholder="0" id="x2">
+                            <button onclick="policz12()">Wynik</button>
+                            <p id="wynik12" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.sin(x)</h1>
+                            <p>
+                                Metoda statyczna Math.sin() zwraca sinus liczby w radianach. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.sin(90 * Math.PI / 180)</li>
+                                    </ul>
+                            </p>
+                            <label for="a13">a = </label>
+                            <input type="number" placeholder="0" id="a13">
+                            <label for="b13">b = </label>
+                            <input type="number" placeholder="0" id="b13">
+                            <button onclick="policz13()">Wynik</button>
+                            <p id="wynik13" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.random()</h1>
+                            <p>
+                                Metoda statyczna Math.random() zwraca zmiennoprzecinkową, pseudolosową liczbę, która jest większa lub równa 0 i mniejsza niż 1, z w przybliżeniu równomiernym rozkładem w tym zakresie — którą można następnie przeskalować do żądanego zakresu. Implementacja wybiera początkowe ziarno do algorytmu generowania liczb losowych; Nie może być wybrany ani zresetowany przez użytkownika. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.random()</li>
+                                    </ul>
+                            </p>
+                            <label for="a14">a = </label>
+                            <input type="number" placeholder="0" id="a14">
+                            <label for="b14">b = </label>
+                            <input type="number" placeholder="0" id="b14">
+                            <button onclick="policz14()">Wynik</button>
+                            <p id="wynik14" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.tanh</h1>
+                            <p>
+                                Metoda statyczna Math.tanh() zwraca tangens hiperboliczny liczby. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.tanh(a)</li>
+                                    </ul>
+                            </p>
+                            <label for="a15">a = </label>
+                            <input type="number" placeholder="0" id="a15">
+                            <button onclick="policz15()">Wynik</button>
+                            <p id="wynik15" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.hypot</h1>
+                            <p>
+                                Metoda statyczna Math.hypot() zwraca pierwiastek kwadratowy z sumy kwadratów argumentów. 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.hypot(a, b)</li>
+                                    </ul>
+                            </p>
+                            <label for="a16">a = </label>
+                            <input type="number" placeholder="0" id="a16">
+                            <label for="b16">b = </label>
+                            <input type="number" placeholder="0" id="b16">
+                            <button onclick="policz16()">Wynik</button>
+                            <p id="wynik16" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.exp</h1>
+                            <p>
+                                Metoda statyczna Math.exp() zwraca wartość e podniesioną do potęgi liczby
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.exp(a)</li>
+                                    </ul>
+                            </p>
+                            <label for="a17">a = </label>
+                            <input type="number" placeholder="0" id="a17">
+                            <button onclick="policz17()">Wynik</button>
+                            <p id="wynik17" class="wnk"></p>
+                            <br>
+                        </div>
+                        <hr class="hrr">
+                        <div class="math-fnt math-1">
+                            <h1>Math.atan2</h1>
+                            <p>
+                                Metoda statyczna Math.atan2() zwraca kąt w płaszczyźnie (w radianach) między dodatnią osią x a promieniem od (0, 0) do punktu (x, y) dla Math.atan2(y, x). 
+                                <p>
+                                    przykład:
+                                    <ul>
+                                        <li>Math.atan2(y, x)</li>
+                                    </ul>
+                            </p>
+                            <label for="a18">a = </label>
+                            <input type="number" placeholder="0" id="a18">
+                            <label for="a18">b = </label>
+                            <input type="number" placeholder="0" id="a18">
+                            <button onclick="policz18()">Wynik</button>
+                            <p id="wynik18" class="wnk"></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="navigation-row">
+                <div class="navigation-f">
+                    <ul>
+                        <li><a href="#baner">baner</a></li>
+                        <li><a href="#functions-1">funkcje</a></li>
+                        <li><a href="#functions-2">funckje 2</a></li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <a href="https://pl-pl.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/matih3w/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/MattH3w123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <hr>
+                <p>Copyright &#169;2023. Designed by Mattihew Irzyk</p>
+            </div>
+        </footer> 
+    </div>
+    <script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>
